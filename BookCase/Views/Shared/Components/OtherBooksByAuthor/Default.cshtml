@@ -1,0 +1,13 @@
+﻿@model IEnumerable<BookCase.Models.Book>
+@*
+    NOTE: This razor view works just like an MVC razor view    
+*@
+<div>
+    <h4>Other books by this author</h4>
+    <ul>
+        @foreach(var book in Model)
+        {
+            <li>@book.Title</li> 
+        }
+    </ul>
+</div>
